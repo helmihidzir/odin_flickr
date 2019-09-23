@@ -1,0 +1,5 @@
+<% @photos.each do |p| %>
+  <div>
+    <img src="<%= "http://farm#{p["farm"]}.staticflickr.com/#{p["server"]}/#{p["id"]}_#{p["secret"]}.jpg" %>">
+  </div>
+<% end %>
